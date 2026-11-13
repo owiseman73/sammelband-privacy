@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>Sammelband – Hilfe / Support</title>
+  <style>
+    :root {
+      --bg: #F7F3E8; --surface: #FFFDF7; --raised: #EFE8D6; --border: #D8CFBC;
+      --text: #123C3C; --muted: #506A65; --accent: #D9BE82; --accent-text: #7D5F22; --petrol: #164647; --on-petrol: #F7F3E8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #092B2C; --surface: #123E3F; --raised: #19494A; --border: #38605E;
+        --text: #F7F3E8; --muted: #B3CAC5; --accent: #D9BE82; --accent-text: #D9BE82; --petrol: #103D3C; --on-petrol: #F7F3E8;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text);
+           min-height: 100vh; padding: 40px 16px; line-height: 1.65; }
+    .container { max-width: 680px; margin: 0 auto; }
+    .logo { text-align: center; margin-bottom: 28px; }
+    .wordmark { font-family: Futura, 'Century Gothic', 'Trebuchet MS', sans-serif; font-weight: 500; font-size: 1.7rem;
+                letter-spacing: 0.32em; text-transform: uppercase; color: var(--text); padding-left: 0.32em; }
+    .rule { display: flex; align-items: center; justify-content: center; gap: 10px; margin: 10px auto 8px; }
+    .rule span { height: 1px; width: 64px; background: var(--accent); box-shadow: 0 3px 0 var(--accent); }
+    .rule i { width: 8px; height: 8px; background: var(--accent); transform: rotate(45deg); }
+    .logo p { color: var(--muted); font-size: 0.9rem; }
+    .nav { text-align: center; margin-bottom: 28px; }
+    .nav a { display: inline-block; margin: 4px 8px; color: var(--muted); text-decoration: none; font-size: 0.9rem; }
+    .nav a[aria-current] { color: var(--accent-text); font-weight: 600; }
+    .card { background: var(--surface); border: 1px solid var(--border); padding: 26px 24px; margin-bottom: 22px;
+            clip-path: polygon(14px 0, calc(100% - 14px) 0, 100% 14px, 100% calc(100% - 14px), calc(100% - 14px) 100%, 14px 100%, 0 calc(100% - 14px), 0 14px); }
+    .card-head { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+    .card-head b { font-family: Georgia, 'Iowan Old Style', serif; font-size: 1.15rem; }
+    .card-head small { color: var(--muted); font-size: 0.8rem; margin-left: auto; }
+    h2 { font-family: Georgia, 'Iowan Old Style', serif; font-size: 1.02rem; color: var(--accent-text); margin: 18px 0 6px; }
+    p, li { font-size: 0.95rem; color: var(--text); }
+    p + p { margin-top: 8px; }
+    ul { padding-left: 20px; }
+    .muted { color: var(--muted); }
+    .highlight { background: var(--petrol); color: var(--on-petrol); padding: 12px 16px; margin: 0 0 6px; font-size: 0.95rem; border-left: 3px solid var(--accent); }
+    address { font-style: normal; }
+    a { color: var(--accent-text); }
+    footer { text-align: center; margin-top: 32px; color: var(--muted); font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="logo">
+      <div class="wordmark">Sammelband</div>
+      <div class="rule" aria-hidden="true"><span></span><i></i><span></span></div>
+      <p>Hilfe · Support</p>
+    </header>
+    <nav class="nav"><a href="index.html">Datenschutz / Privacy</a><a href="impressum.html">Impressum / Legal Notice</a><a href="support.html" aria-current="page">Hilfe / Support</a></nav>
+    <section class="card" lang="de">
+      <div class="card-head"><span aria-hidden="true">🇩🇪</span><b>Hilfe</b></div>
+      <h2>Wie kommt ein Buch auf die Apple Watch?</h2>
+      <p>Tippe beim Buch auf das Watch-Symbol, oder lass neue Bücher von selbst zur Watch gehen. Große Dateien nimmt die Watch an, <b>sobald sie lädt</b> oder solange Sammelband auf der Watch geöffnet ist; so regelt watchOS das für alle Apps. Am einfachsten: Watch aufs Ladegerät, iPhone in der Nähe. Ein 15-Stunden-Hörbuch war im Test in rund 11 Minuten auf der Watch. Die Mitteilung „Bereit für die Watch“ öffnet Sammelband auf der Watch mit einem Tipp.</p>
+      <h2>Warum steht am iPhone „Wartet auf die Watch“?</h2>
+      <p>Die Übertragung ist vorbereitet, die Watch lässt sie aber gerade nicht zu. Sie geht von selbst weiter, wenn die Watch lädt oder du Sammelband auf der Watch öffnest. Abbrechen musst du nichts.</p>
+      <h2>Welche Dateien kann Sammelband binden?</h2>
+      <p>MP3-Dateien, ganze Ordner und Archive (ZIP, RAR, 7z), auch aus der Dateien-App, etwa von deinem Netzlaufwerk. Fertige Hörbücher (M4B, M4A) holst du direkt ins Regal. Hörbücher mit Kopierschutz (DRM), etwa aus Abo-Diensten, kann Sammelband nicht öffnen.</p>
+      <h2>Kontakt</h2>
+      <p>Fragen, Fehler, Wünsche: <a href="mailto:info@bfi-consulting.de?subject=Sammelband">info@bfi-consulting.de</a></p>
+
+    </section>
+    <section class="card" lang="en">
+      <div class="card-head"><span aria-hidden="true">🇬🇧</span><b>Support</b></div>
+      <h2>How does a book get onto the Apple Watch?</h2>
+      <p>Tap the Watch symbol next to a book, or let new books go to the Watch automatically. The Watch accepts large files <b>while it is charging</b> or while Sammelband is open on it; watchOS handles this the same way for all apps. Easiest: put the Watch on its charger with the iPhone nearby. In our test a 15-hour audiobook reached the Watch in about 11 minutes. The “Ready for the Watch” notification opens Sammelband on the Watch with one tap.</p>
+      <h2>Why does the iPhone say “Waiting for the Watch”?</h2>
+      <p>The transfer is ready, but the Watch is not accepting it right now. It continues on its own when the Watch charges or when you open Sammelband on the Watch. You don't need to cancel anything.</p>
+      <h2>Which files can Sammelband bind?</h2>
+      <p>MP3 files, whole folders and archives (ZIP, RAR, 7z), including from the Files app, for example from your network drive. Finished audiobooks (M4B, M4A) go straight onto the shelf. Audiobooks with copy protection (DRM), for example from subscription services, cannot be opened.</p>
+      <h2>Contact</h2>
+      <p>Questions, bugs, wishes: <a href="mailto:info@bfi-consulting.de?subject=Sammelband">info@bfi-consulting.de</a></p>
+
+    </section>
+
+    <footer>
+      <p>© 2026 Bernd Firneburg | bfi-consulting</p>
+    </footer>
+  </div>
+</body>
+</html>

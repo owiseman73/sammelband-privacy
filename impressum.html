@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>Sammelband – Impressum / Legal Notice</title>
+  <style>
+    :root {
+      --bg: #F7F3E8; --surface: #FFFDF7; --raised: #EFE8D6; --border: #D8CFBC;
+      --text: #123C3C; --muted: #506A65; --accent: #D9BE82; --accent-text: #7D5F22; --petrol: #164647; --on-petrol: #F7F3E8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #092B2C; --surface: #123E3F; --raised: #19494A; --border: #38605E;
+        --text: #F7F3E8; --muted: #B3CAC5; --accent: #D9BE82; --accent-text: #D9BE82; --petrol: #103D3C; --on-petrol: #F7F3E8;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text);
+           min-height: 100vh; padding: 40px 16px; line-height: 1.65; }
+    .container { max-width: 680px; margin: 0 auto; }
+    .logo { text-align: center; margin-bottom: 28px; }
+    .wordmark { font-family: Futura, 'Century Gothic', 'Trebuchet MS', sans-serif; font-weight: 500; font-size: 1.7rem;
+                letter-spacing: 0.32em; text-transform: uppercase; color: var(--text); padding-left: 0.32em; }
+    .rule { display: flex; align-items: center; justify-content: center; gap: 10px; margin: 10px auto 8px; }
+    .rule span { height: 1px; width: 64px; background: var(--accent); box-shadow: 0 3px 0 var(--accent); }
+    .rule i { width: 8px; height: 8px; background: var(--accent); transform: rotate(45deg); }
+    .logo p { color: var(--muted); font-size: 0.9rem; }
+    .nav { text-align: center; margin-bottom: 28px; }
+    .nav a { display: inline-block; margin: 4px 8px; color: var(--muted); text-decoration: none; font-size: 0.9rem; }
+    .nav a[aria-current] { color: var(--accent-text); font-weight: 600; }
+    .card { background: var(--surface); border: 1px solid var(--border); padding: 26px 24px; margin-bottom: 22px;
+            clip-path: polygon(14px 0, calc(100% - 14px) 0, 100% 14px, 100% calc(100% - 14px), calc(100% - 14px) 100%, 14px 100%, 0 calc(100% - 14px), 0 14px); }
+    .card-head { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+    .card-head b { font-family: Georgia, 'Iowan Old Style', serif; font-size: 1.15rem; }
+    .card-head small { color: var(--muted); font-size: 0.8rem; margin-left: auto; }
+    h2 { font-family: Georgia, 'Iowan Old Style', serif; font-size: 1.02rem; color: var(--accent-text); margin: 18px 0 6px; }
+    p, li { font-size: 0.95rem; color: var(--text); }
+    p + p { margin-top: 8px; }
+    ul { padding-left: 20px; }
+    .muted { color: var(--muted); }
+    .highlight { background: var(--petrol); color: var(--on-petrol); padding: 12px 16px; margin: 0 0 6px; font-size: 0.95rem; border-left: 3px solid var(--accent); }
+    address { font-style: normal; }
+    a { color: var(--accent-text); }
+    footer { text-align: center; margin-top: 32px; color: var(--muted); font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="logo">
+      <div class="wordmark">Sammelband</div>
+      <div class="rule" aria-hidden="true"><span></span><i></i><span></span></div>
+      <p>Impressum · Legal Notice</p>
+    </header>
+    <nav class="nav"><a href="index.html">Datenschutz / Privacy</a><a href="impressum.html" aria-current="page">Impressum / Legal Notice</a><a href="support.html">Hilfe / Support</a></nav>
+    <section class="card" lang="de">
+      <div class="card-head"><span aria-hidden="true">🇩🇪</span><b>Impressum</b></div>
+      <h2>Angaben gemäß § 5 DDG</h2>
+      <address>Bernd Firneburg | bfi-consulting<br>Annaweg 5<br>71088 Holzgerlingen<br>Deutschland</address>
+      <h2>Kontakt</h2>
+      <p>E-Mail: <a href="mailto:info@bfi-consulting.de">info@bfi-consulting.de</a></p>
+      <h2>Verantwortlich für den Inhalt</h2>
+      <p>Bernd Firneburg (Anschrift wie oben)</p>
+      <h2>Verbraucherstreitbeilegung</h2>
+      <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+      <h2>Haftung</h2>
+      <p>Die Inhalte dieser App und dieser Seiten wurden mit größter Sorgfalt erstellt. Für Richtigkeit, Vollständigkeit und Aktualität können wir keine Gewähr übernehmen. Als Diensteanbieter sind wir für eigene Inhalte nach den allgemeinen Gesetzen verantwortlich. Für die Hörbücher, die du mit Sammelband bearbeitest, bist du selbst verantwortlich.</p>
+      <h2>Urheberrecht</h2>
+      <p>Die vom Betreiber erstellten Inhalte und Werke unterliegen dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung und jede Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des Autors.</p>
+
+    </section>
+    <section class="card" lang="en">
+      <div class="card-head"><span aria-hidden="true">🇬🇧</span><b>Legal Notice</b></div>
+      <h2>Information pursuant to § 5 DDG</h2>
+      <address>Bernd Firneburg | bfi-consulting<br>Annaweg 5<br>71088 Holzgerlingen<br>Germany</address>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:info@bfi-consulting.de">info@bfi-consulting.de</a></p>
+      <h2>Responsible for content</h2>
+      <p>Bernd Firneburg (address as above)</p>
+      <h2>Consumer dispute resolution</h2>
+      <p>We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board.</p>
+      <h2>Liability</h2>
+      <p>The contents of this app and these pages have been created with the utmost care. However, we cannot guarantee their accuracy, completeness or timeliness. As a service provider, we are responsible for our own content under general law. You are responsible for the audiobooks you process with Sammelband.</p>
+      <h2>Copyright</h2>
+      <p>The content and works created by the operator are subject to German copyright law. Reproduction, editing, distribution and any use beyond the limits of copyright law require the author's written consent.</p>
+
+    </section>
+
+    <footer>
+      <p>© 2026 Bernd Firneburg | bfi-consulting</p>
+    </footer>
+  </div>
+</body>
+</html>
